@@ -5,14 +5,18 @@ div.container {
 }
 
 table {
+    border: 1px solid $table_bor_col;
+    tr:nth-child(odd) {
+        background: $table_row_col
+    }
 
-    tr:nth-child(odd) {background: $table_row_col}
-
-    td:first-child {width: $first_col_width}
+    td:first-child {
+        width: $first_col_width
+    }
   
     th {
         background-color: $table_head_col;
     }
 
-    border: 1px solid $table_bor_col;
+    
 }

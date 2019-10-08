@@ -1,5 +1,6 @@
 
 // Clearfix
+// Example @include clearfix();
 @mixin clearfix() {
 	content: "";
 	display: table;
@@ -7,11 +8,11 @@
 }
 
 
-// Example: @include prefix(transform, translateY(-50%), webkit moz spec);
+// Example: @include prefix(transform, rotate(180deg));
 @mixin prefix($property, $value) {
+    #{$property}: $value;
 	-webkit-#{$property}: $value;
 	-moz-#{$property}: $value;
 	-ms-#{$property}: $value;
 	-o-#{$property}: $value;
-	#{$property}: $value;
 }
